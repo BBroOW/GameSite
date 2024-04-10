@@ -1,0 +1,10 @@
+version: "3"
+services:
+  gamesite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gamesite
+    ports:
+      - "8080:8080"
+    command: npm start
